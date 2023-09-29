@@ -1,32 +1,32 @@
-import { useEffect, useRef } from 'react'
-import { BsCart4 } from 'react-icons/bs'
-import { AiOutlineUser } from 'react-icons/ai'
-import { BsSearch } from 'react-icons/bs'
-import { FiMenu } from 'react-icons/fi'
-import {BsInstagram}from 'react-icons/bs'
+import { useEffect, useRef } from "react";
+import { BsCart4 } from "react-icons/bs";
+import { AiOutlineUser } from "react-icons/ai";
+import { BsSearch } from "react-icons/bs";
+import { FiMenu } from "react-icons/fi";
+import { BsInstagram } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BsSnapchat } from "react-icons/bs";
 import { BsTiktok } from "react-icons/bs";
-import logo from '../assets/logo.webp'
-import logo2 from '../assets/za-deg.png'
-import  './navbarStyle.css'
+import logo from "../assets/logo.webp";
+import logo2 from "../assets/za-deg.png";
+import "./navbarStyle.css";
 
 const NaveBAr = () => {
-  const navTopREf = useRef()
+  const navTopREf = useRef();
   useEffect(() => {
     const handel_Scroll_Nav = () => {
-      if(window.scrollY >= 200) {
-       navTopREf.current.style.position = 'fixed'
-       navTopREf.current.style.top = '0'
+      if (window.scrollY >= 200) {
+        navTopREf.current.style.position = "fixed";
+        navTopREf.current.style.top = "0";
       } else {
-         navTopREf.current.style.position = "relative";
+        navTopREf.current.style.position = "relative";
       }
-    }
-     window.addEventListener("scroll", handel_Scroll_Nav)
-    return () => {
-      window.removeEventListener("scroll",handel_Scroll_Nav)
     };
-  },[])
+    window.addEventListener("scroll", handel_Scroll_Nav);
+    return () => {
+      window.removeEventListener("scroll", handel_Scroll_Nav);
+    };
+  }, []);
   return (
     <>
       <div
@@ -82,5 +82,5 @@ const NaveBAr = () => {
       </div>
     </>
   );
-}
+};
 export default NaveBAr;
