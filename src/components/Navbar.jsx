@@ -52,7 +52,7 @@ const NaveBAr = () => {
         </div>
       </div>
       <div className="navLinks w-full h-[60px] flex justify-between items-center px-6 font-bold text-[14px]  ">
-        <ul className="menu-nav-bar flex w-[60%] h-full  justify-center items-center ">
+        <ul className=" flex w-[60%] h-full  justify-center items-center ">
           <li>خدمات المتاجر الالكترونية</li>
           <li className="flex items-center mr-4">
             <img src={logo2} alt="زيا الرقمية" className="w-4 h-4 ml-2" />
